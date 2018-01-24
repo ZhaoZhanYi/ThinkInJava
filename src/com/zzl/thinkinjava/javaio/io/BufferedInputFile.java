@@ -10,6 +10,7 @@ public class BufferedInputFile {
         BufferedReader in = new BufferedReader(new FileReader(filename));
         String s;
         StringBuilder sb = new StringBuilder();
+
         while ((s = in.readLine()) != null) {
             sb.append(s + "\n");
         }
@@ -19,5 +20,6 @@ public class BufferedInputFile {
 
     public static void main(String[] args) throws IOException {
         System.out.println(read("./src/com/zzl/thinkinjava/javaio/io/BufferedInputFile.java"));
+
     }
 }
